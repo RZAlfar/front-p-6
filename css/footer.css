@@ -1,0 +1,109 @@
+footer{
+background-color: #333;
+height: 320px;
+color: #fff;
+}
+
+footer flex{
+display: flex;
+flex-direction: row;
+width: 100%;
+padding-top: 40px;
+align-items: center;
+justify-content: space-around;
+
+}
+footer flex-l{
+display: flex;
+width: 60%;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-around;
+gap: 20px;
+min-height: 260px;}
+
+flex-l part{
+width:200px;
+}
+footer flex-l h1{
+display: flex;
+
+text-align: center;
+text-transform: capitalize;
+margin-top:0 ;
+letter-spacing: 2px;
+font-size: 20px;
+margin-bottom: 20px;
+}
+
+footer flex-l p{
+font-size: 16px;
+letter-spacing: 1.5px;
+color: #bababa;
+cursor: pointer;
+margin: 10px 15px;
+padding-left:5px ;
+border-left: 1px solid transparent;
+text-transform: capitalize;
+text-align: center;
+}
+footer flex-l p a{
+text-decoration: none;
+color: #bababa;
+
+}
+
+footer flex-l p:hover{
+transform: translateX(25px);
+color: #f1900e;
+border-left: 1px solid #f1900e;
+}
+footer flex-r{
+display: flex;
+flex-direction: column;
+width: 20%;
+justify-self: flex-end;
+min-height: 260px;
+}
+
+footer form{
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+}
+
+footer flex-r h1{
+text-transform: capitalize;
+padding-bottom: 20px;
+}
+footer form input:nth-of-type(1){
+height: 40px;
+padding: 7px 10px;
+outline: none;
+
+}
+footer form textarea{
+height: 100px;
+padding: 7px 10px;
+text-align: start;
+outline: none;
+
+}
+footer form input:nth-of-type(2){
+padding: 10px 40px;
+outline: none;
+width: fit-content;
+align-self: center;
+cursor: pointer;
+color: #fff;
+border: none;
+background-color: #f1900e;
+letter-spacing: 2px;
+
+}
+footer form input:nth-of-type(2):hover{
+background-color: transparent;
+color: #fff;
+background-color: #ab4ec7;
+}

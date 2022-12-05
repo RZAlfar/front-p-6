@@ -1,0 +1,116 @@
+nav{
+min-height: 60px;
+width: 100%;
+display: block;
+position: fixed;
+background-color: #f7f7f79d;
+z-index: 3;
+}
+
+logo{
+display: flex;
+width: 40px;
+height: 60px;
+font-size: 25px;
+float: left;
+margin-left: 40px;
+align-items: center;
+justify-content: center;
+}
+
+nav > ul{
+height: 60px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+float: right;
+margin-right: 10px;
+
+}
+nav > ul li{
+list-style: none;
+text-decoration: none;
+color: black;
+font-size: 20px;
+cursor: pointer;
+margin: 5px;
+text-transform: capitalize;
+border-radius: 5px;
+position: relative;
+margin-bottom: 0;
+display: flex;
+height: fit-content;
+}
+ul li a{
+text-decoration: none;
+color: black;
+transition: 0.1s;
+padding: 10px 20px;
+text-transform: capitalize;
+
+}
+ul li:hover > a{
+color: #fff;
+}
+ul li:hover{
+scale: 93%;
+background-color: #f1900e;
+}
+ul span{
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 60px;
+width: fit-content;
+}
+
+inner{
+list-style: none;
+color: black;
+text-transform: capitalize;
+border-radius: 5px;
+position: absolute;
+transform: translateY(-20px);
+opacity: 0;
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 190px;
+flex-direction: column;
+left: 0;
+top:100%;
+pointer-events: none;
+background-color: #f1f1f1;
+gap: 5px;
+padding:5px 0px;
+
+}
+
+ul span:hover inner{
+opacity: 1;
+transform: translateY(0px);
+pointer-events: all;
+}
+inner a{
+text-decoration: none;
+width: 100%;
+text-align: center;
+position: relative;
+border-left:1px solid transparent ;
+font-size: 14px;
+transition: 0s;
+padding: 0;
+}
+span ul a:hover{
+color: #fff;
+}
+inner li{
+width: 90%;
+padding:0px;
+}
+inner li:hover{
+scale: 93%;
+background-color: #f1900e;
+}

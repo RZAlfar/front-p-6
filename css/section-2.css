@@ -1,0 +1,91 @@
+section-2{
+height: fit-content;
+
+}
+
+section-2 box{
+display: flex;
+flex-direction: row;
+width: 80%;
+margin: 100px auto;
+align-items: center;
+justify-content: space-between;
+}
+
+section-2 card{
+width: 30%;
+background-color: #ab4ec7;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding:30px 40px;
+gap: 30px;
+border-radius: 40px;
+color: #fff;
+}
+section-2 card:nth-of-type(2){
+background-color:#f1900e ;
+}
+section-2 svg{
+width: 70px;
+}
+section-2 card h1{
+text-transform: capitalize;
+font-size: 20px;
+font-weight: 500;
+}
+section-2 card h2{
+text-transform: capitalize;
+font-size: 14px;
+font-weight: 100;
+text-align: center;
+}
+
+
+section-2 box-2{
+display: flex;
+flex-direction: row;
+width: 80%;
+margin: 40px auto;
+gap: 50px;
+justify-content: space-between;
+align-items: center;
+}
+section-2 box-2 h1{
+font-size: 2.4rem;
+width: 50%;
+align-self: start;
+text-transform: capitalize;
+display: block;
+}
+section-2 box-2 inner-box{
+display: flex;
+flex-direction: column;
+width: 50%;
+justify-content: space-between;
+gap: 30px;
+text-transform: capitalize;
+}
+
+section-2 box-2 inner-box p{
+text-transform: capitalize;
+line-height: 200%;
+}
+
+section-2 box-2 inner-box button{
+background-color: #ab4ec7;
+color: #fff;
+border-radius: 30px;
+font-size: 20px;
+outline: none;
+border: none;
+padding: 10px 40px;
+width: fit-content;
+cursor: pointer;
+text-transform: capitalize;
+}
+section-2 box-2 inner-box button:hover{
+background-color: #7d3b91;
+transform: translateX(10px);
+}

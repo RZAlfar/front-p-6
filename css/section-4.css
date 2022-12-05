@@ -1,0 +1,79 @@
+section-4{
+height: fit-content;
+
+}
+
+section-4 top{
+width: 70%;
+margin: 40px auto;
+display: flex;
+flex-direction: column;
+gap:40px;
+align-items: center;
+justify-content: center;
+}
+
+section-4 top span{
+display: block;
+height: 4px;
+width: 200px;
+background-color: black;
+}
+section-4 top h1{
+text-transform: capitalize;
+font-size: 3rem;
+}
+
+section-4 top h2{
+text-transform: capitalize;
+font-size: 1.3rem;
+
+}
+
+section-4 flex{
+display: flex;
+flex-direction: row;
+width: 80%;
+margin: 30px auto;
+height: fit-content;
+justify-content: space-around;
+align-items: center;
+}
+
+section-4 card{
+display: grid;
+grid-template-columns: 60px 190px;
+grid-template-rows: 50px 100px;
+height: fit-content;
+width: fit-content;
+transition: .5s;
+}
+section-4 card:hover h1,section-4 card:hover p{
+transform: translateY(-20px);
+scale: 110%;
+height: fit-content;
+}
+
+section-4 num{
+grid-row: span 2;
+font-size: 5rem;
+color: #ab4ec7;
+font-weight: bold;
+align-self: flex-start;
+}
+
+section-4 card h1{
+font-size:20px;
+align-self: center;
+text-transform: capitalize;
+color: #ab4ec7;
+}
+
+
+section-4 card p{
+font-size: 14px;
+font-style: italic;
+color: gray;
+text-transform: capitalize;
+
+}

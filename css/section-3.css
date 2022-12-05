@@ -1,0 +1,119 @@
+section-3{
+position: relative;
+height: 900px;
+display: block;
+
+}
+
+section-3 svg{
+width: 1000px;
+position: absolute;
+display: block;
+top:-100px;
+left: 10%;
+z-index: -1;
+}
+
+
+section-3 cal-grid{
+display: grid;
+gap: 2px;
+grid-template-columns: repeat(4,100px);
+grid-template-rows: minmax(100px auto) repeat(5);
+width: fit-content;
+position: absolute;
+top: 10%;
+right: 30%;
+}
+
+
+section-3 .span-2{
+grid-column: span 2;
+background-color: #ffd600;
+}
+section-3 .span-2:hover{
+background-color: #e8c203;
+}
+section-3 output{
+grid-column: 1/-1;
+height: 120px;
+ backdrop-filter: blur(25px) saturate(0%);
+    -webkit-backdrop-filter: blur(25px) saturate(0%);
+    background-color: rgba(0, 0, 0, 0.639);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: space-around;
+padding: 15px 20px;
+}
+section-3 prev-cal{
+color: #01bede;
+font-size: 1.2rem;
+}
+section-3 current-cal{
+color: #e8c203;
+font-size: 2rem;
+}
+
+section-3 button{
+height: 70px;
+cursor: pointer;
+font-size: larger;
+font-weight: bold;
+background-color: rgba(255, 255, 255, 0.957);
+outline: none;
+border: none;
+transition: .2s;
+text-transform: uppercase;
+}
+section-3 button:hover{
+background-color: rgb(232, 232, 232);
+scale: 95%;
+}
+
+
+section-3 box{
+display: flex;
+flex-direction: column;
+background-color: #fff;
+border-radius: 10px;
+padding: 25px 30px;
+position: absolute;
+top:30%;
+left: 5%;
+width: 300px;
+gap: 20px;
+letter-spacing: 1.7px;
+box-shadow: -8px 8px 21px -12px rgba(0,0,0,0.75);
+-webkit-box-shadow: -8px 8px 21px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: -8px 8px 21px -12px rgba(0,0,0,0.75);
+
+}
+
+section-3 box h2{
+text-transform: capitalize;
+
+}
+section-3 box h1{
+text-transform: capitalize;
+font-size: 1.3rem;
+}
+section-3 box h3{
+text-transform: capitalize;
+font-size: 16px;
+}
+
+section-3 box h3 a{
+text-transform: uppercase;
+cursor: pointer;
+text-decoration: none;
+color: black;
+border-bottom: 1px solid black;
+letter-spacing: 1.5px;
+}
+section-3 box h3 a:hover{
+color: #ff8819;
+border-bottom: 1px solid #ff8819;
+
+}

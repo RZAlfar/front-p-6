@@ -1,0 +1,265 @@
+section-5{
+display: block;
+height:1030px;
+position: relative;
+}
+
+
+
+
+
+section-5 svg{
+z-index: -2;
+position: absolute;
+top:100px;
+left: 5%;
+}
+to-do {
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: 'Patrick Hand', cursive;
+position: absolute;
+top:30%;
+left: 30%;
+}
+
+to-do container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+width:500px;
+height: 500px;
+gap: 30px;
+margin-top: 50px;
+}
+
+to-do top{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+height: 15%;
+background: rgb(255, 255, 255);
+-webkit-backdrop-filter: blur(12px);
+backdrop-filter: blur(12px);
+
+border-radius: 10px;
+}
+
+to-do input{
+width: 60% ;
+height: 40PX;
+background-color: transparent;
+color: rgb(7, 7, 7);
+outline: NONE;
+border: none;
+padding: 0px 10px;
+font-size: 20px;
+border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+to-do input::placeholder{
+color: rgb(106, 106, 106);
+text-transform: capitalize;
+font-size: 18px;
+}
+#add_task{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 35px;
+width: 35px;
+border-radius: 50%;
+background-color: #f1900e;
+color: #fff;
+font-size:16px;
+cursor: pointer;
+}
+#add_task:hover{
+scale: 90%;
+background-color: #bc6d07;
+
+}
+
+/* ============ */
+to-do bottom{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 80%;
+gap: 10px;
+background: rgb(255, 255, 255);
+border-radius: 10px;
+}
+
+tasks{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: transparent;
+width: 100%;
+height:100%;
+padding: 6px 12px ;
+margin:auto;
+overflow-y: auto;
+scroll-behavior: smooth;
+overflow-x: hidden;
+
+}
+task{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 90%;
+height: 50px;
+padding: 6px 12px ;
+margin: 10px auto;
+border-radius: 10px;
+gap: 6px;
+font-size: 18px;
+background-color: #f1900e;
+
+}
+task label{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width: 80%;
+min-height: 100%;
+height: fit-content;
+
+gap: 6px;
+}
+check_icon{
+display: flex;
+align-items: center;
+justify-content: center;
+width:20px;
+border-radius: 50%;
+display: flex;
+border: 1px solid black;
+height: 20px;
+cursor: pointer;
+color: transparent;
+transition: 0.1s;
+font-size: 12px;
+}
+
+task_name{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+user-select: none;
+width: 80%;
+cursor: pointer;
+min-height: 50PX;
+height: fit-content;
+}
+
+task:hover{
+scale: 105%;
+background-color: #f1900e88;
+
+}
+
+to-do label input:checked ~ task_name{
+text-decoration: line-through;
+}
+to-do label input:checked ~ check_icon{
+background-color: rgba(120, 120, 120, 0.726);
+color:#fff ;
+border: none;
+}
+
+delete_icon{
+width: 35px;
+height: 35px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+
+color: black;
+
+cursor: pointer;}
+delete_icon i{
+transition: 0s;
+}
+delete_icon:hover{
+background:#f1900e;
+transform: translateY(-2px);
+
+}
+
+#empty_task{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px 60px;
+font-size: 1.8rem;
+position:absolute;
+top:10%;
+left: 4%;
+color: rgba(219, 219, 219, 0.779);
+rotate: -10deg;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.084);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}
+
+
+
+section-5 box{
+display: flex;
+flex-direction: column;
+background-color: #fff;
+border-radius: 10px;
+padding: 25px 30px;
+position: absolute;
+top:35%;
+left: 5%;
+width: 300px;
+gap: 20px;
+letter-spacing: 1.7px;
+box-shadow: -8px 8px 21px -12px rgba(0,0,0,0.75);
+-webkit-box-shadow: -8px 8px 21px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: -8px 8px 21px -12px rgba(0,0,0,0.75);
+
+}
+
+section-5 box h2{
+text-transform: capitalize;
+
+}
+section-5 box h1{
+text-transform: capitalize;
+font-size: 1.3rem;
+}
+section-5 box h3{
+text-transform: capitalize;
+font-size: 16px;
+}
+
+section-5 box h3 a{
+text-transform: uppercase;
+cursor: pointer;
+text-decoration: none;
+color: black;
+border-bottom: 1px solid black;
+letter-spacing: 1.5px;
+}
+section-5 box h3 a:hover{
+color: #ff8819;
+border-bottom: 1px solid #ff8819;
+
+}
